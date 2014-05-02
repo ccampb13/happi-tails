@@ -2,10 +2,44 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title JS++
+    title Mortal Kombat
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 JS++
+
+      #controls
+        select#species
+          option Dragon
+          option Alien
+          option Predator
+          option Ninja
+        select#gender
+          option Male
+          option Female
+        select#weapons
+          option Poison
+          option Fire
+          option Arrow
+          option Axe
+        input#name(placeholder="Name")
+        input#age(placeholder="Age")
+        input#photo(placeholder="Photo URL")
+        button#add Add Fighter!
+
+      #container
+
+        img(src='../media/mortal3.png')
+        //- p Every animal is unique - especially your sloth! Visit a HappiTails location near you for open play animal daycare, overnight boarding or spa services and experience personalized care and exceptional customer service. Our convenient live webcams offer a peek into your dog's eventful day with a dragon, of course supervised by our well-trained, loving staff.
+
+        #footer
+          //- h3 Allowing Tigers come summer!
+
+      #creatures
+        h3#dragons
+        h3#aliens
+        h3#predators
+        h3#ninjas
+
+
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
@@ -13,4 +47,9 @@ html(lang='en')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
     script(src='./js/es5/main.js')
+    script(src='./js/es6/utility.js')
+    script(src='./js/es6/alien.js')
+    script(src='./js/es6/predator.js')
+    script(src='./js/es6/ninja.js')
+    script(src='./js/es6/dragon.js')
     script(src='./js/es6/main.js')
